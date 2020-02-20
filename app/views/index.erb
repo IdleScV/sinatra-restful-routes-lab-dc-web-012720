@@ -1,0 +1,8 @@
+<h2>This is all the recipes</h2>
+<ul>
+<%Recipe.all.each do |recipe|%>
+    <a href="/recipes/<%=recipe.id%>"><li><%=recipe.name%></li></a>
+<%end%>
+<br>
+<a href="/recipes/new">Create a new recipe</a>
+<ul>
